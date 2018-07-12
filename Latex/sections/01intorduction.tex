@@ -1,0 +1,27 @@
+\section{Introduction}
+Multi-cloud term came from the academic world to essentially business environment recently and the number of cloud management platforms, as well as their demand and functionality, is continuously growing. The goal of this platforms is to assemble various cloud providers for centralised management of virtual resources and a centralised billing system. With the increasing complexity of the applications which are running on cloud deployments, the need for hybrid cloud management system is growing. As for today, different platforms offer different functionality with varying policies of pricing, as well as with varying levels of performance. In this regard, the number of platforms for management is continuously growing. There is no standardisation of the environment for evaluation of centralised cloud management platforms, even though productivity is a critical factor for today's applications.
+
+Cloud management platforms, as well as API abstract libraries currently used by many large groups, such as Redhat\cite{redhat}, Apache\cite{Apache}, Cloud Foundry\cite{cf} etc. Depending on the complexity, functionality and architecture of particular middleware, it loads the system in different ways. This work defines three types of middlewares which are aimed to give a certain level of abstraction for cloud and virtual resource management and to centralise providers.
+\begin{itemize}
+\item SaaS - Multi-cloud platforms which are running remotely on the service provider side providing management platform as a service and only one way to access it is via IP address. 
+\item Open-source - Multi-cloud platforms which can be executed by researcher locally or remotely. In most cases, developers provide docker images. 
+\item Library - Multi-cloud API libraries developed for particular language.
+\end{itemize}
+
+It is not correct to compare these middlewares since they fulfil different goals, but evaluation of separately taken functionalities of the systems which are having the same type of management provider brings a complete picture of current state of the art. For example, ManageIQ and MinstIO compare the time of creation and synchronisation of the AWS provider.
+
+This paper will describe the challenges and created an approach for CMPs evaluation. The primary objective of this work is to create a centralised and standardised software solution for testing numerous platforms, to compare results and compress output as table or graphs. Furthermore, this results can be easily extended by other researchers and keep experiments reusable and repeatable by other groups or industry. The testbed focused mostly on: 
+\begin{itemize}
+\item Execution time for a specific request
+\item System Consumption: CPU and Memory
+\end{itemize}
+
+The aim of this work is to systematise the approach of testing and comparing different CMP functionalities. The work is useful for companies that need to choose between existing solutions, and to developers, to see the advantages and disadvantages of the particular function of the platform. 
+
+The paper structured as follow: 
+
+Related work makes an analyse of existing academic work which focussed on the evaluation of particular platforms to define needs and requirements used in solutions of relevant problems.
+
+Architecture design and implementation describe the classification of management platforms and abstract APIs concerning testbed, an approach of creating extendable software, testbed implementation including high-level architecture and workflow.
+
+Experiments and exemplary results focus on a description of experimental setup and result from the analysis in the form of the table as well as visualised as graphs. 
