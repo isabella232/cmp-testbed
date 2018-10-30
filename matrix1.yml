@@ -1,0 +1,14 @@
+demo:
+  repetitions: 10
+  output_dir: /home/panos/test
+  cmps: [cloudbridge, libcloud]
+  providers: [aws]
+  pre_experiment:
+  post_experiment:
+  actions:
+    provider:
+      - create
+      - list
+      - delete
+      
+

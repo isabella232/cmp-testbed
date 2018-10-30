@@ -1,0 +1,14 @@
+demo2:
+  repetitions: 10
+  output_dir: /home/panos/test
+  cmps: [cloudify]
+  providers: [aws]
+  pre_experiment:
+  post_experiment:
+  actions:
+    system:
+      - start
+      - stop
+      - remove
+      
+
