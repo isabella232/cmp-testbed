@@ -1,8 +1,12 @@
 # CMP² - Testbed for recomputable multi-cloud management experiments
 
-This testbed is created as research in education linked to the Cloud Accounting and Billing research initiative at Service Prototyping Lab, Zurich University of Applied Sciences, Switzerland.
+CMP² lets you define workflows of actions related to cloud management (e.g. start new virtual machine, delete some files) in multi-cloud environments. It makes use of cloud management platforms (CMP) which are effectively compared concerning performance and resource use. Results are output as text and diagrams.
 
-Documentation is sparse right now but we will update it soon. At the moment we concentrate on finishing on the research aspects which we submit as paper to a major cloud computing conference.
+This testbed is created as research in education linked to the Cloud Accounting and Billing research initiative at Service Prototyping Lab, Zurich University of Applied Sciences, Switzerland. Related to it is a paper entitled «Systematic and recomputable comparison of multi-cloud management platforms», published at CloudCom 2018 (https://doi.org/10.1109/CloudCom2018.2018.00032).
+
+# CMPs and Providers
+
+Currently, CMP² supports local system metrics as well as remote metrics for AWS and Azure. It supports ManageIQ, Cloudbridge, Cloudify, Cloudcheckr, Boto, Libcloud and Mistio as CMPs. Some of them are "CMPs" in a wider sense, more in the form of libraries, but for all remote services (cloud providers and CMPs) that require authentication, CMP² lets you configure the credentials. Additional providers and CMPs can be added easily; see below for instructions.
 
 # Workflows
 
