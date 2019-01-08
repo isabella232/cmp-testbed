@@ -1,0 +1,2 @@
+This implementation does not use the docker implementation for the rest of the project as I could not enter the required parameters to it.
+Because of this I am just running the docker shell commands and timing them.
